@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
 
 int n = 8;
-int count = 0;
+
+int contar = 0;
+
 vector<int> column;
 vector<int> diag1;
 vector<int> diag2;
@@ -11,7 +12,7 @@ vector<string>mapa;
 
 void search(int y) {
     if (y == n) {
-        count++;
+        contar++;
         return;
     }
     for (int x = 0; x < n; x++) {
@@ -25,13 +26,14 @@ void search(int y) {
 
 
 int main() {
-	column.resize(n,0);
-    diag1.resize(n,0);
-    diag2.resize(n,0);
+	column.resize(8,0);
+    diag1.resize(15,0);
+    diag2.resize(15,0);
     mapa.resize(n);
-    
+
     for(int i = 0;i<n;i++){cin >> mapa[i];}
     
     search(0);
 
+    cout << contar << endl;
 }

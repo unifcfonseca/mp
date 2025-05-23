@@ -20,6 +20,12 @@
         "chrono": "cpp",
         "random": "cpp",
         "limits": "cpp",
-        "algorithm": "cpp"
-    }
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "memory": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "functional": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
